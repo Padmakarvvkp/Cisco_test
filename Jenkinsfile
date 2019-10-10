@@ -19,7 +19,7 @@ stage ('Deploy') {
 echo "Deployment completed"
 }
 }
-if [ "$FCI_BUILD_STEP_STATUS" == "success" ]
+if [ $FCI_BUILD_STEP_STATUS == success ]
 then
 new_version=v1.0.$BUILD_NUMBER
 git tag $new_version
