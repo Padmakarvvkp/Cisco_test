@@ -16,6 +16,6 @@ stage ('Deploy') {
 echo "Deployment completed"
 }
 stage ('TagVersioning') {
-sh 'TagVersion.sh'
+sh './TagVersion.sh'
 }
 }
